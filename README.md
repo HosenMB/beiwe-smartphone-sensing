@@ -1,6 +1,6 @@
-# Smartphone Sensing: Human Activity & Sleep Analysis with Beiwe
+# Smartphone Sensing: Human Activity & Sleep Analysis
 
-A course project for collecting passive smartphone sensor data with the
+A project for collecting passive smartphone sensor data with the
 [Beiwe](https://www.beiwe.org/) research platform and turning it into
 interpretable **sleep** and **human-activity** measures. Students install the
 Beiwe app, contribute accelerometer data, and analyze it with the two Python
@@ -12,10 +12,10 @@ packages in this repository.
 .
 ├── README.md                     # this overview
 ├── Beiwe_Student_Setup_Guide.md  # install the app & register (participants)
-├── Beiwe_Data/                   # raw Beiwe exports — one folder per participant
+├── Beiwe_Data/                   # raw Beiwe exports
 ├── Output/                       # analysis results are written here
-├── run_sleep.py                  # one-command sleep analysis
-├── run_har.py                    # one-command activity analysis
+├── run_sleep.py                  # sleep analysis
+├── run_har.py                    # activity analysis
 ├── Sleep_Metrics/                # nightly sleep metrics    → Sleep_Metrics/README.md
 └── Human_Activity/               # activity recognition     → Human_Activity/README.md
 ```
@@ -29,8 +29,7 @@ packages in this repository.
 2. **Open a terminal in this folder** (the one containing this README).
    - Windows: **PowerShell** (Shift-right-click the folder → *Open in Terminal*).
    - macOS: **Terminal** (right-click the folder in Finder → *New Terminal at Folder*).
-3. In the commands below, use **`python`** on Windows. On macOS, if `python` is
-   not found, use **`python3`** (and `pip3`).
+3. In the commands below, use **`python`** on Windows. On macOS, , use **`python3`**.
 
 ## Getting started
 
