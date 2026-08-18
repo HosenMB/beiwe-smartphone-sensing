@@ -1,8 +1,7 @@
-# sleepmetric — nightly sleep metrics from a phone accelerometer
+# Nightly sleep metrics from a phone accelerometer
 
 Interpretable, rule-based nightly sleep metrics from smartphone accelerometer
-data — no wearable, no heart rate, no sleep stages. Part of the
-[Beiwe smartphone-sensing project](../README.md).
+data.
 
 All timestamps are converted to **Maryland local time** (`America/New_York`,
 daylight-saving aware). A *night* is the local noon-to-noon window labelled by
