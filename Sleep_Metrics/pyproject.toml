@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sleepmetric"
+version = "0.1.0"
+description = "Interpretable nightly sleep metrics from smartphone accelerometer data (rule-based, no wearable, no sleep stages)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "UMBC Data-Science Lab" }]
+keywords = ["sleep", "actigraphy", "accelerometer", "smartphone", "digital-health"]
+dependencies = [
+    "numpy>=1.21",
+    "pandas>=1.3",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7", "ruff", "black"]
+
+[project.scripts]
+sleepmetric = "sleepmetric.core:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

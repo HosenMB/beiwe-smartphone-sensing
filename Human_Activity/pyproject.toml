@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "beiwe_har"
+version = "0.1.0"
+description = "Human-activity recognition from Beiwe accelerometer data (ECDF/UCI-HAR features, RF model, activity summaries)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Md Biplob Hosen", email = "mhosen1@umbc.edu" }]
+dependencies = ["numpy", "pandas", "scipy", "scikit-learn==1.6.1", "pytz", "tqdm", "geopy"]
+
+[project.optional-dependencies]
+geo = ["shapely"]
+
+[project.scripts]
+beiwe-har = "beiwe_har.pipeline:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+beiwe_har = ["models/*.pkl"]

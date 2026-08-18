@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Analysis results — keep the folder, ignore its contents
+Output/*
+!Output/.gitkeep
+
+# Raw participant data — human-subjects; do NOT commit (students add their own)
+Beiwe_Data/
+
+# Local cleanup staging
+_to_delete/

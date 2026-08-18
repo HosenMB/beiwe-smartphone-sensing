@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+.venv/
+
+# Generated analysis outputs (regenerate by running the scripts)
+*_clean.csv
+*_sleep_metrics.csv
+sleep_metrics.csv
+
+# Raw participant data — large + human-subjects data.
+# Uncomment the next line to keep it OUT of the git repo.
+# beiwe_data/
