@@ -1,8 +1,7 @@
-# beiwe_har — Human Activity Recognition from Beiwe accelerometer
+Human Activity Recognition from Beiwe data
 
 An end-to-end pipeline: a raw [Beiwe](../README.md) study export → per-window
-activity predictions and activity summaries. Part of the Beiwe smartphone-sensing
-project.
+activity predictions and activity summaries. 
 
 ## Install
 
@@ -38,10 +37,9 @@ beiwe-har Beiwe_Data -o Output --uci-har
 1. Combine the raw `<participant>/accelerometer/*.csv` files and convert
    UTC → US/Eastern.
 2. Split into sessions on gaps > 10 s, **resample each session to 50 Hz**, and cut
-   2-second windows (50 % overlap). Gravity is removed (low-pass) so the signal
-   matches the model's training data.
+   2-second windows (50 % overlap). 
 3. **ECDF features** (78 per window) → **Random Forest** → one activity label per
-   window. Classes (MotionSense): `dws` = downstairs, `ups` = upstairs,
+   window. Classes: `dws` = downstairs, `ups` = upstairs,
    `wlk` = walk, `jog`, `std` = stand, `sit`.
 4. **Per-minute** and **day-wise** activity summaries (`Low` / `Medium` / `High`).
 
